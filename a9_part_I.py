@@ -39,23 +39,23 @@ if __name__ == "__main__":
     print('\n<<<< Date extraction tests passed >>>>\n')
 
     print("<<<<< Address Problem >>>>>\n")
-    # uncomment the following prints to see results and asserts to test
-    # print(f'number is: {address_matches.group("number")}!') # should print "number is: 2501"
-    # print(f'street is: {address_matches.group("street")}!') # should print "street is: Addison Street"
-    # print(f'city is: {address_matches.group("city")}!')     # should print "city is: Chicago"
-    # print(f'state is: {address_matches.group("state")}!')   # should print "state is: IL"
-    # print(f'zip is: {address_matches.group("zip")}!')       # should print "zip is: 60618"
-    # assert address_matches.group('number') == '2501', "Incorrect address number"
-    # assert address_matches.group('street') == 'Addison Street', "Incorrect street"
-    # assert address_matches.group('city') == 'Chicago', "Incorrect city"
-    # assert address_matches.group('state') == 'IL', "Incorrect state"
-    # assert address_matches.group('zip') == '60618', "Incorrect zip"
-    # print('\n<<<< Address extraction tests passed >>>>\n')
+    uncomment the following prints to see results and asserts to test
+    print(f'number is: {address_matches.group("number")}!') # should print "number is: 2501"
+    print(f'street is: {address_matches.group("street")}!') # should print "street is: Addison Street"
+    print(f'city is: {address_matches.group("city")}!')     # should print "city is: Chicago"
+    print(f'state is: {address_matches.group("state")}!')   # should print "state is: IL"
+    print(f'zip is: {address_matches.group("zip")}!')       # should print "zip is: 60618"
+    assert address_matches.group('number') == '2501', "Incorrect address number"
+    assert address_matches.group('street') == 'Addison Street', "Incorrect street"
+    assert address_matches.group('city') == 'Chicago', "Incorrect city"
+    assert address_matches.group('state') == 'IL', "Incorrect state"
+    assert address_matches.group('zip') == '60618', "Incorrect zip"
+    print('\n<<<< Address extraction tests passed >>>>\n')
 
     print("<<<<< Hashtag Problem >>>>>\n")
-    # uncomment the following prints to see results and asserts to test
-    # print(f"hashtags are: {hashtag_matches}") # should be ['cs', 'python', 'LT', 'champions']"
-    # assert hashtag_matches == ['cs', 'python', 'LT', 'champions'], "Incorrect hashtags"
-    # print('\n<<<< Hashtag extraction tests passed >>>>\n')
+    uncomment the following prints to see results and asserts to test
+    print(f"hashtags are: {hashtag_matches}") # should be ['cs', 'python', 'LT', 'champions']"
+    assert hashtag_matches == ['cs', 'python', 'LT', 'champions'], "Incorrect hashtags"
+    print('\n<<<< Hashtag extraction tests passed >>>>\n')
 
-    # print('\n<<<< All tests passed! >>>>')
+    print('\n<<<< All tests passed! >>>>')
