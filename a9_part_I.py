@@ -39,7 +39,7 @@ if __name__ == "__main__":
     print('\n<<<< Date extraction tests passed >>>>\n')
 
     print("<<<<< Address Problem >>>>>\n")
-    uncomment the following prints to see results and asserts to test
+    # uncomment the following prints to see results and asserts to test
     print(f'number is: {address_matches.group("number")}!') # should print "number is: 2501"
     print(f'street is: {address_matches.group("street")}!') # should print "street is: Addison Street"
     print(f'city is: {address_matches.group("city")}!')     # should print "city is: Chicago"
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     print('\n<<<< Address extraction tests passed >>>>\n')
 
     print("<<<<< Hashtag Problem >>>>>\n")
-    uncomment the following prints to see results and asserts to test
+    # uncomment the following prints to see results and asserts to test
     print(f"hashtags are: {hashtag_matches}") # should be ['cs', 'python', 'LT', 'champions']"
     assert hashtag_matches == ['cs', 'python', 'LT', 'champions'], "Incorrect hashtags"
     print('\n<<<< Hashtag extraction tests passed >>>>\n')
