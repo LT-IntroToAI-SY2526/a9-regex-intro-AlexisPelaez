@@ -25,8 +25,16 @@ def get_page_html(title: str) -> str:
         },
         headers={"User-Agent": "intro-ai-class/1.0"}
     )
-    data = response.json()
-    return data["parse"]["text"]["*"]
+    # Kept receiving errors with the part below. I had to add the try/except structure to make my code work
+    try:
+        data = response.json()
+        return data["parse"]["text"]["*"]
+    except:
+        page = requests.get(
+            f"https://en.wikipedia.org/wiki/{title}",
+            headers={"User-Agent": "intro-ai-class/1.0"}
+        ).text
+        return page
 
 
 def get_first_infobox_text(html: str) -> str:
